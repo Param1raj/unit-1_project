@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            background-color: rgb(88, 120, 237);
+        }
+        .container{
+            height: 100%;
+            width: 25%; 
+            margin: auto;
+            display: grid;
+            text-align: center;
+            justify-content: center;
+            
+            background-color: whitesmoke;
+            margin-top: 80px;
+            border-radius: 20px;
+            
+        }
+        #username,#password{
+            padding-bottom: 10px;
+        }
+        #username input,#password input{
+            width: 100%;
+            border: none;
+           border-bottom: 1px solid grey;
+           padding: 20px 0px;
+        }
+        button{
+            width: 100%;
+            background-color: rgb(199, 76, 215);
+            color: aliceblue;
+            border: 0;
+            padding: 20px 0px;
+            margin-top: 10px;
+        }
+        button:hover{
+            background-color: rgb(97, 97, 242);
+        
+        }
+        
+
+        #bottom{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            
+        }
+        #bottom >p:first-child,#last >p:first-child{
+            color: grey;
+        }
+        #bottom >p:last-child,#last >p:last-child{
+            color: rgb(40, 40, 174);
+        }
+        #last{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -25px;
+            margin-bottom: 70px;
+        }
+        h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 50px;
+            padding: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <div id="username"><input type="text" placeholder="Email"/></div>
+        <div id="password"><input type="password" placeholder="Password"/></div>
+        <div><button>Login</button></div>
+        <!-- <h5>Forget<p>Password?</p></h5>
+        <h5>Don't have any account</h5>  -->
+        <div id="bottom">
+            <p>Forget</p>
+            <p>Password?</p>
+            
+        </div>
+        <div id="last">
+            <p>Don't have an account?</p>
+            <p>Sign up</p>
+            
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+
