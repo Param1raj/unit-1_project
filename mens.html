@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            height: auto;
+            width:68% ;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: repeat(2,50%);
+            grid-template-rows: auto
+          
+        }
+        #main>div{
+           
+             margin-left: 20px;
+        }
+        #main>div>img{
+            width: 50%;
+            display: block;
+            margin: auto;
+
+        }
+        #main>div>img+h2{
+            margin-top: 5px;
+            margin-left: 5px;
+            font-size:30px;
+            font-family: sans-serif;
+        }
+        #main>div:nth-child(2)>img+h2{
+            margin-top: 28px;
+            margin-left: 5px;
+            font-size:30px;
+            font-family: sans-serif;
+        }
+        #main>div>img+h2+p{
+            margin-top: -10px;
+            margin-left: 5px;
+            font-size: 25px;
+            font-family: sans-serif;
+           
+        }
+        
+        
+        #price{
+           display: flex;
+          margin-left: 5px;
+           gap: 10px;
+           height: auto;
+          
+           margin-top: 2px;
+        }
+        #price>div{
+        
+          margin-top: -20px;
+          height: auto
+        }
+        #price>div:nth-child(2)>p{
+            font-size: 28px;
+            text-decoration: line-through;
+            margin-top: 10px;
+            
+            
+        }
+        #price>div:nth-child(1)>h2{
+            font-size: 30px;
+            font-family: sans-serif;
+            margin-top: 10px;
+            font-family: sans-serif;
+        }
+        #price>div:nth-child(3)>h2{
+            font-size: 30px;
+            font-family: sans-serif;
+            color: #7aca9b;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="main">
+         <div>
+            <img src="https://m.media-amazon.com/images/I/61k6tcljbML._AC_UL320_.jpg" alt="">
+            <h2>Pause</h2>
+             <p>Mens Cotton long Sleeves shrug</p>
+            <div id="price">
+                <div><h2> ₹ 359</h2></div>
+                <div> <p>₹ 1499</p></div>
+                <div><h2>-76%</h2></div>
+            </div>
+
+
+         </div>
+         <div>
+            <img src="https://m.media-amazon.com/images/I/31snSVfsXtL._AC_UL320_.jpg" alt="">
+            <h2>JUBINATION</h2>
+             <p>Men Wool Sleeves sweater Pack Of 1</p>
+            <div id="price">
+                <div><h2> ₹ 799</h2></div>
+                <div> <p>₹ 1499</p></div>
+                <div><h2>-47%</h2></div>
+            </div>
+         </div>
+    </div>
+</body>
+</html>
